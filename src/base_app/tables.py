@@ -2,28 +2,25 @@ import streamlit as st
 import pandas as pd
 
 
-def show_table(data):
-    data = data.loc[:, ~data.columns.str.contains('\*')] # Remove '*' columns
+def column_selector(data):
     columns = data.columns.to_list()
-
     selected_columns = st.multiselect('Columns to show:', columns, columns)
 
-    # Read 'start' and 'end' as datetime
-    for column in selected_columns:
-        if column == 'start' or column=='end':
-            data[column] = pd.to_datetime(data[column])
+    return selected_columns
 
-    if 'year' in data.columns:
-        data = data.sort_values(by=[data.columns[0], data.columns[1], data.columns[2],
-                                    data.columns[3], data.columns[4], data.columns[5], 
-                                    ]) .reset_index(drop=True) 
-    # Mostrar los datos seleccionados
-    if selected_columns:
-        st.dataframe(data[selected_columns], use_container_width = True)
-        with st.expander('Stats'):
-            st.dataframe(data[selected_columns].describe(), use_container_width=True)
+def show_table(data, columns=None):
+    if columns is None: columns = data.columns.to_list()
+    if columns:
+        st.dataframe(data[columns], use_container_width = True)
     else:
         st.write("No se ha seleccionado ninguna columna.")
+    return
+
+def show_stats(data, columns=None):
+    if columns is None: columns = data.columns.to_list()
+    with st.expander('Stats'):
+        st.dataframe(data[columns].describe(), use_container_width=True)
+    return
 
 def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
     """
