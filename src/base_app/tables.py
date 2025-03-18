@@ -2,24 +2,26 @@ import streamlit as st
 import pandas as pd
 
 
-def column_selector(data):
-    columns = data.columns.to_list()
+def column_selector(data, default_columns:list = None):
+    if default_columns is None:
+        columns = data.columns.to_list()
+    else: columns = default_columns
     selected_columns = st.multiselect('Columns to show:', columns, columns)
 
     return selected_columns
 
-def show_table(data, columns=None):
+def show_table(data, columns=None, use_container_width=True):
     if columns is None: columns = data.columns.to_list()
     if columns:
-        st.dataframe(data[columns], use_container_width = True)
+        st.dataframe(data[columns], use_container_width = use_container_width)
     else:
         st.write("No se ha seleccionado ninguna columna.")
     return
 
-def show_stats(data, columns=None):
+def show_stats(data, columns=None, use_container_width=True):
     if columns is None: columns = data.columns.to_list()
     with st.expander('Stats'):
-        st.dataframe(data[columns].describe(), use_container_width=True)
+        st.dataframe(data[columns].describe(), use_container_width=use_container_width)
     return
 
 def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
