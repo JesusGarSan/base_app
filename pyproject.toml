@@ -19,7 +19,7 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 license = "MIT"
-license-files = ["LICENCSE"]
+license-files = ["LICEN[CS]E*"]
 
 [project.urls]
 Homepage = "https://github.com/JesusGarSan/base_app"
