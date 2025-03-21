@@ -11,13 +11,18 @@ base_app.config.default("Test")
 header_elements = [
 {
     "page_name": "Home",
-    "filepath": "./pages/home.py" ,
+    "filepath": "./test_home.py" ,
     "icon": "🏠"
 },
 {
     "page_name": "Tables",
-    "filepath": "./pages/tables.py" ,
+    "filepath": "./pages/test_tables.py" ,
     "icon": "🗃️"
+},
+{
+    "page_name": "Maps",
+    "filepath": "./pages/test_maps.py" ,
+    "icon": "🗺️"
 },
 
 ]

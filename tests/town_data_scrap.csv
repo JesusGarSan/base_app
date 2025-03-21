@@ -1,0 +1,1316 @@
+town,population
+Madrid,3416771
+Barcelona,1702547
+Valencia,825948
+Sevilla,687488
+Zaragoza,686986
+Málaga,591637
+Murcia,474617
+Palma de Mallorca,431521
+Las Palmas de Gran Canaria,380436
+Alicante,358720
+Bilbao,348089
+Córdoba,322811
+Valladolid,300618
+Vigo,293997
+Hospitalet de Llobregat,279993
+Gijón,268561
+Vitoria,257968
+La Coruña,249261
+Elche,243128
+Granada,232717
+Tarrasa,228708
+Badalona,227083
+Sabadell,222177
+Oviedo,220543
+Cartagena,219777
+Móstoles,214006
+Jerez de la Frontera,213668
+Santa Cruz de Tenerife,211359
+Pamplona,207777
+Almería,202675
+Alcalá de Henares,200702
+Leganés,194084
+Fuenlabrada,190790
+Getafe,189906
+San Sebastián,189083
+Castellón de la Plana,180379
+Burgos,175895
+Albacete,174137
+Santander,174101
+Alcorcón,173625
+San Cristóbal de La Laguna,160258
+Marbella,159000
+Logroño,151164
+Badajoz,150570
+Salamanca,144866
+Lérida,144739
+Huelva,143290
+Tarragona,141151
+Torrejón de Ardoz,140626
+Dos Hermanas,140430
+Parla,134833
+Mataró,131798
+Algeciras,124978
+León,122243
+Alcobendas,121373
+Santa Coloma de Gramanet,121203
+Jaén,112074
+Cádiz,110914
+Reus,109930
+Roquetas de Mar,109204
+Gerona,107032
+Orense,104891
+Telde,102867
+Baracaldo,101984
+Rivas-Vaciamadrid,101949
+Santiago de Compostela,99536
+Lugo,99482
+San Cugat del Vallés,98621
+Las Rozas de Madrid,98590
+Lorca,98334
+Cáceres,96441
+San Sebastián de los Reyes,94969
+Torrevieja,94803
+San Fernando,93645
+Mijas,93302
+Cornellá de Llobregat,91589
+El Ejido,90135
+Guadalajara,90909
+El Puerto de Santa María,89960
+Chiclana de la Frontera,89794
+Torrente,89401
+Pozuelo de Alarcón,89378
+Toledo,86526
+Vélez-Málaga,85990
+Fuengirola,85859
+Melilla,85491
+San Baudilio de Llobregat,84831
+Talavera de la Reina,84738
+Orihuela,83720
+Valdemoro,83507
+Pontevedra,83077
+Ceuta,83052
+Arona,82982
+Rubí,81532
+Coslada,80760
+Manresa,80201
+Gandía,80095
+Estepona,78413
+Benalmádena,77654
+Molina de Segura,77493
+Santa Lucía de Tirajana,77098
+Alcalá de Guadaíra,76922
+Palencia,76738
+Guecho,75981
+Ciudad Real,75909
+Avilés,75351
+Paterna,74822
+Benidorm,74663
+Majadahonda,73355
+Torremolinos,70933
+Sagunto,70486
+Villanueva y Geltrú,70418
+Sanlúcar de Barrameda,69876
+Castelldefels,69450
+Viladecans,67348
+Collado Villalba,66698
+El Prat de Llobregat,66184
+Boadilla del Monte,65839
+Arrecife,64735
+Ferrol,64218
+Granollers,64181
+La Línea de la Concepción,64177
+Irún,63656
+Ponferrada,62994
+Aranjuez,62292
+Alcoy,60372
+San Vicente del Raspeig,60269
+Mérida,59857
+Motril,59632
+Arganda del Rey,59513
+Zamora,59506
+Ávila,58111
+Sardañola del Vallés,58100
+Colmenar Viejo,57029
+Pinto,56003
+Linares,55261
+Huesca,54704
+Elda,53818
+Ibiza,53717
+Calviá,53491
+Cuenca,53429
+San Bartolomé de Tirajana,52936
+Tres Cantos,52932
+Siero,52593
+Villarreal,52505
+Granadilla de Abona,52447
+Mollet del Vallés,52283
+Rincón de la Victoria,52230
+Utrera,52173
+Torrelavega,51663
+Segovia,51525
+Adeje,50549
+Vic,49530
+Figueras,48875
+Gavá,48007
+Mairena del Aljarafe,47898
+Manacor,47777
+Esplugas de Llobregat,47613
+Alcira,47335
+Denia,46943
+San Feliú de Llobregat,46554
+Santurce,46247
+Mislata,46153
+Puertollano,45195
+Portugalete,44766
+Alhaurín de la Torre,44057
+Alcantarilla,43547
+Lucena,43086
+Lloret de Mar,42600
+La Orotava,42434
+Blanes,42198
+Puerto Real,42151
+Puerto del Rosario,42024
+Santa Eulalia del Río,41706
+Antequera,41619
+Villafranca del Panadés,41504
+Igualada,41466
+Soria,40750
+Burjasot,40634
+La Rinconada,40529
+Vendrell,40440
+Basauri,40388
+Marrachí,40079
+Torre-Pacheco,40074
+Lluchmayor,39912
+Plasencia,39829
+Écija,39500
+Ripollet,39462
+Rentería,39352
+Narón,39285
+San Fernando de Henares,38980
+Olot,38822
+Los Palacios y Villafranca,38757
+Santa Pola,38556
+San Adrián de Besós,38490
+Arucas,38369
+Oleiros,38333
+Langreo,38282
+Villagarcía de Arosa,37761
+Don Benito,37485
+Tudela,37247
+Los Realejos,37207
+Moncada y Reixach,36891
+Águilas,36862
+Cambrils,36496
+Tomelloso,36304
+Teruel,36267
+Mieres,36195
+Onteniente,36194
+Villajoyosa,36093
+Miranda de Ebro,36018
+Arroyomolinos,35972
+Andújar,35788
+Burriana,35750
+Yecla,35521
+Azuqueca de Henares,35498
+Cieza,35286
+Galapagar,35273
+San Javier,35241
+Tortosa,34639
+Inca,34577
+San Juan Despí,34568
+Mazarrón,34462
+Villena,34144
+Almendralejo,33948
+Petrel,33914
+Úbeda,33810
+San Roque,33646
+Aranda de Duero,33626
+Arteijo,33516
+Aldaya,33376
+Ronda,33329
+Barberá del Vallés,33322
+Salt,33242
+Castro-Urdiales,33225
+Totana,33149
+Níjar,32858
+Agüimes,32643
+Lejona,32491
+Ames,32482
+Ingenio,32354
+Navalcarnero,31974
+Sitges,31954
+San Pedro de Ribas,31786
+Vall de Uxó,31611
+Manises,31573
+Ciudadela,31443
+Carballo,31416
+Illescas,31327
+Arcos de la Frontera,30953
+Alcázar de San Juan,30928
+Coria del Río,30887
+Culleredo,30864
+Puerto de la Cruz,30849
+Chirivella,30749
+Calafell,30631
+Hellín,30516
+Valdepeñas,30411
+Camargo,30349
+Salou,30224
+Crevillente,30191
+Játiva,30072
+Campello,29993
+San Andrés del Rabanedo,29961
+Mahón,29902
+Alacuás,29825
+Puente Genil,29781
+Durango,29767
+Jávea,29760
+Vinaroz,29686
+Rota,29675
+Carmona,29551
+San José,29506
+Galdácano,29332
+Catarroja,29316
+Seseña,29271
+La Oliva,29099
+Redondela,28937
+Lepe,28813
+Premiá de Mar,28767
+Martorell,28760
+Pineda de Mar,28751
+Villaviciosa de Odón,28750
+Candelaria,28694
+Benicarló,28681
+Cártama,28412
+San Vicente dels Horts,28406
+Vícar,28245
+San Antonio Abad,28237
+Camas,28157
+Sueca,28086
+Almazora,27989
+Sestao,27834
+Lebrija,27727
+San Pedro del Pinatar,27691
+Algemesí,27438
+Almuñécar,27305
+Éibar,27234
+Morón de la Frontera,27229
+Paiporta,27184
+Muchamiel,27078
+Riveira,27030
+Paracuellos de Jarama,27000
+San Andrés de la Barca,26910
+Alhaurín el Grande,26879
+Cangas de Morrazo,26807
+Jumilla,26784
+Bétera,26759
+Piélagos,26605
+Molins de Rey,26555
+Puebla de Vallbona,26435
+Santa Perpetua de Moguda,25928
+Ciempozuelos,25866
+Calpe,25854
+Alboraya,25792
+Novelda,25771
+Caravaca de la Cruz,25756
+Villanueva de la Serena,25751
+Cuart de Poblet,25590
+Oliva,25558
+Onda,25547
+Tomares,25374
+San Juan de Alicante,25275
+Almonte,25233
+Adra,25195
+Villarrobledo,25189
+Castellar del Vallés,25150
+Torrelodones,25115
+Armilla,25059
+Coín,25023
+Valls,25014
+Calahorra,24994
+Cambre,24739
+Gáldar,24678
+Tacoronte,24652
+Liria,24518
+Olesa de Montserrat,24446
+Erandio,24411
+Martos,24363
+Almansa,24282
+Mejorada del Campo,24274
+Los Barrios,24219
+Marín,24197
+El Masnou,24181
+Mairena del Alcor,24125
+Icod de los Vinos,23971
+Ibi,23920
+Teguise,23881
+Palafrugell,23848
+Altea,23820
+Cullera,23753
+Conil de la Frontera,23661
+Villanueva de la Cañada,23593
+Ribarroja del Turia,23555
+Pilar de la Horadada,23428
+Alhama de Murcia,23280
+Vilaseca,23176
+Puenteareas,23154
+Zarauz,23152
+Moguer,22956
+Las Gabias,22829
+Barbate,22811
+Bormujos,22780
+San Felíu de Guixols,22751
+Laguna de Duero,22672
+San Miguel de Abona,22606
+San Juan de Aznalfarache,22472
+Esparraguera,22442
+Guía de Isora,22301
+Montilla,22298
+Maracena,22275
+Amposta,22270
+Aljaraque,22259
+Picasent,22236
+Las Torres de Cotillas,22183
+Valle de Egüés,22121
+Castrillón,22103
+Moncada,22067
+Priego de Córdoba,22003
+Arroyo de la Encomienda,21946
+Nerja,21913
+Alfafar,21879
+Almoradí,21874
+Mondragón,21867
+Ayamonte,21645
+Isla Cristina,21603
+Alcalá la Real,21587
+Güímar,21536
+Aspe,21473
+Tías,21433
+Alcudia,21322
+Pájara,21271
+Manlleu,21172
+Cartaya,21128
+Vilasar de Mar,21055
+Algete,20991
+Torrox,20932
+La Unión,20897
+Burlada,20865
+Mogán,20845
+Carcagente,20777
+Puzol,20731
+Palma del Río,20688
+Loja,20580
+Baza,20579
+Porriño,20562
+Hernani,20527
+Las Franquesas del Vallés,20522
+Alfaz del Pi,20518
+Bañolas,20506
+San Justo Desvern,20462
+Huércal-Overa,20425
+Requena,20387
+San Martín de la Vega,20304
+Lalín,20282
+San Quirico de Tarrasa,20241
+Los Llanos de Aridane,20189
+Rosas,20140
+Archena,20110
+Medina del Campo,20090
+La Estrada,20081
+Cabra,20070
+Tolosa,20065
+Atarfe,20024
+Benicasim,19951
+Humanes de Madrid,19902
+La Zubia,19885
+Calella,19862
+Silla,19683
+Calatayud,19677
+Chipiona,19649
+Barañáin,19575
+Amorebieta-Echano,19570
+Arahal,19491
+Vera,19488
+Callosa de Segura,19484
+Albolote,19474
+Moaña,19315
+Marchena,19271
+El Viso del Alcor,19265
+Malgrat de Mar,19213
+San Bartolomé,19200
+Lasarte-Oria,19133
+La Eliana,19054
+Teo,19034
+Cardedeu,19023
+Boiro,18984
+La Nucía,18970
+Utebo,18955
+Parets,18893
+Villaquilambre,18765
+Tarifa,18621
+Los Alcázares,18598
+Felanich,18592
+Baena,18533
+Guadix,18527
+Santa Brígida,18510
+Huércal de Almería,18507
+San Lorenzo de El Escorial,18489
+San Celoni,18479
+Tordera,18409
+Lora del Río,18316
+Palamós,18293
+Tárrega,18268
+Monforte de Lemos,18234
+El Astillero,18220
+Caldas de Montbuy,18109
+Fuente Álamo de Murcia,18063
+Nigrán,18045
+Llodio,17917
+Munguía,17882
+El Rosario,17866
+Manilva,17857
+Sangenjo,17854
+Monzón,17839
+Manzanares,17732
+Villanueva del Pardillo,17731
+Torredembarra,17670
+Balaguer,17649
+Daimiel,17629
+Rojales,17451
+Tabernes de Valldigna,17443
+Osuna,17418
+Yaiza,17415
+Mula,17382
+Puerto Lumbreras,17346
+Guardamar del Segura,17328
+Tuy,17327
+Poyo,17297
+Barbastro,17295
+Pollensa,17279
+Benavente,17261
+Bailén,17211
+Piera,17203
+Castilleja de la Cuesta,17167
+Ejea de los Caballeros,17135
+Guadarrama,17063
+La Garriga,17052
+Canovellas,17051
+Guernica y Luno,17050
+Albal,17024
+Berga,16959
+Pozoblanco,16946
+Cubellas,16914
+Navalmoral de la Mata,16895
+Fuenterrabía,16887
+Bermeo,16878
+Sada,16874
+El Escorial,16873
+Villalbilla,16823
+Montornés del Vallés,16800
+Masamagrell,16766
+Chiva,16750
+Zafra,16672
+La Algaba,16618
+Espartinas,16505
+Churriana de la Vega,16445
+Las Cabezas de San Juan,16400
+Ubrique,16363
+Arenys de Mar,16342
+Tarancón,16257
+Santomera,16245
+Alcañiz,16151
+Carlet,16141
+Llissá de Munt,16092
+Punta Umbría,16069
+Tuineje,15967
+Benetúser,15879
+Pasajes,15857
+Vallirana,15823
+Miguelturra,15769
+Baeza,15723
+Zizur Mayor,15715
+Corvera de Asturias,15612
+Ermua,15599
+La Roda,15542
+Corbera de Llobregat,15466
+Santa Cruz de la Palma,15441
+San Martín del Rey Aurelio,15431
+Meco,15404
+Fraga,15373
+Montijo,15312
+Alpedrete,15312
+Santa Úrsula,15285
+Cunit,15278
+Cuevas del Almanzora,15246
+La Solana,15242
+Vivero,15221
+Arnedo,15201
+Azpeitia,15183
+Palau-solità i Plegamans,15130
+Santa Fe,15105
+Mos,15076
+San Carlos de la Rápita,15046
+Gondomar,15043
+Mollerusa,15037
+Canet de Mar,15010
+Villaviciosa,15000
+Torelló,14902
+Sopelana,14872
+Ogíjares,14803
+La Carolina,14801
+Cuarte de Huerva,14701
+Santa Marta de Tormes,14683
+Andoáin,14555
+Vergara,14487
+Cehegín,14485
+Alginet,14442
+Bollullos Par del Condado,14263
+La Carlota,14258
+Estella,14195
+Sanlúcar la Mayor,14172
+La Puebla,14164
+Moralzarzal,14124
+Noya,14115
+Pilas,14052
+Beasáin,13970
+Carballino,13968
+Santa María de Guía de Gran Canaria,13948
+Llanera,13948
+Torrijos,13885
+Torredelcampo,13871
+Villalba,13870
+Ocaña,13868
+Tomiño,13836
+Nules,13827
+Santa Cruz de Bezana,13689
+Guillena,13682
+Cambados,13681
+Valdemorillo,13651
+San Agustín del Guadalix,13650
+Santa Coloma de Farnés,13634
+Jaca,13620
+Verín,13612
+Sóller,13610
+Montroig,13592
+Llanes,13524
+Antigua,13523
+Álora,13512
+Gines,13481
+Godella,13414
+Alovera,13407
+Velilla de San Antonio,13376
+El Casar,13327
+Torredonjimeno,13301
+Aguilar de la Frontera,13282
+El Barco de Valdeorras,13277
+Sarria,13221
+La Llagosta,13169
+Canals,13162
+Santa Margarita,13160
+Albatera,13092
+Betanzos,13082
+Badía del Vallés,13074
+Abarán,12964
+Campo de Criptana,12960
+San Sadurní de Noya,12945
+Gibraleón,12940
+Berja,12917
+Vejer de la Frontera,12864
+Abrera,12848
+Argentona,12846
+Castellbisbal,12813
+Brenes,12804
+Teror,12799
+Vilanova del Camí,12758
+Órdenes,12669
+Ceutí,12668
+Valverde del Camino,12655
+Seo de Urgel,12568
+Castillo de Aro,12566
+Salobreña,12562
+Fene,12561
+Monóvar,12542
+Palos de la Frontera,12537
+Aranguren,12517
+Teulada,12515
+Santañí,12480
+Montgat,12462
+Bayona,12407
+Estepa,12373
+Villafranca de los Barros,12366
+Torroella de Montgrí,12356
+Laviana,12355
+Capdepera,12340
+Fuensalida,12329
+Albox,12311
+Alcalá del Río,12288
+Benisa,12279
+La Alcudia,12197
+Coria,12166
+Villamartín,12165
+Vegas del Genil,12165
+Huétor Vega,12159
+Socuéllamos,12123
+Calonge,12043
+Béjar,12021
+Bolaños de Calatrava,11991
+Benifayó,11984
+Echévarri,11975
+Santiago del Teide,11972
+Arrigorriaga,11954
+Son Servera,11932
+Bueu,11922
+Valle de Trápaga,11911
+Benaguacil,11877
+La Puebla del Río,11862
+Andrach,11833
+San Andrés de Llavaneras,11831
+Deltebre,11818
+Ciudad Rodrigo,11810
+Olivenza,11776
+Haro,11763
+Campos,11763
+Yuncos,11762
+Picaña,11760
+Medina Sidonia,11738
+Pallejá,11736
+Castellón de Ampurias,11731
+Peligros,11676
+Bullas,11664
+Azcoitia,11636
+Utiel,11632
+Cangas del Narcea,11596
+Oñate,11567
+Laracha,11543
+Beniel,11501
+Elgóibar,11500
+Jódar,11449
+La Bisbal del Ampurdán,11383
+Mancha Real,11375
+Castalla,11365
+Tegueste,11344
+Lardero,11321
+Cocentaina,11309
+Pulpí,11247
+Sonseca,11205
+Formentera,11171
+Bollullos de la Mitación,11160
+Barbadanes,11140
+Quintanar de la Orden,11119
+Fortuna,11094
+Cabanillas del Campo,11034
+Brunete,11014
+Bargas,10978
+San Juan de Torruella,10959
+Valdés,10958
+Oropesa del Mar,10958
+Berriozar,10919
+Meliana,10918
+La Roca del Vallés,10913
+Santoña,10892
+La Puebla de Cazalla,10884
+Rianjo,10854
+Laredo,10849
+Cassá de la Selva,10836
+El Grove,10828
+Alberique,10815
+Los Corrales de Buelna,10785
+Cantillana,10782
+Villamarchante,10772
+Ripoll,10731
+La Palma del Condado,10726
+Tarazona,10720
+Tafalla,10698
+Huétor Tájar,10673
+Villafranca de Ordizia,10641
+Sedaví,10637
+Daganzo de Arriba,10611
+Ansoáin,10608
+Alcácer,10575
+Premiá de Dalt,10532
+Alcora,10526
+Llinás del Vallés,10499
+Pego,10485
+La Escala,10478
+Gozón,10470
+Santa Margarita de Montbuy,10456
+Gelves,10388
+Villacarrillo,10344
+Caspe,10336
+Garrucha,10336
+Oyarzun,10331
+El Álamo,10322
+Astorga,10321
+Peñarroya-Pueblonuevo,10317
+Amurrio,10313
+Lena,10312
+Salvatierra de Miño,10274
+Alcaudete,10265
+Villanueva de Arosa,10225
+Torrejón de la Calzada,10222
+Alguazas,10218
+Alhendín,10216
+Zumaya,10211
+San Antonio de Benagéber,10200
+Carreño,10177
+Madridejos,10169
+Foz,10163
+Calasparra,10161
+Caudete,10146
+Masanasa,10146
+Alella,10139
+Griñón,10087
+Aller,10076
+Sax,10072
+Binéfar,10070
+San Vicente de Castellet,10068
+Villava,10067
+La Bañeza,10047
+Mengíbar,10041
+La Guardia,9998
+Íllora,9951
+Bigas,9949
+Matadepera,9899
+Pizarra,9886
+Santa María de Palautordera,9872
+Puentes de García Rodríguez,9867
+Fuente Palmera,9850
+Masquefa,9839
+Ribadeo,9828
+Alcanar,9827
+Alfaro,9823
+Palafolls,9819
+El Espinar,9814
+Consuegra,9805
+Alcarrás,9787
+Mora,9782
+Rute,9779
+Puigcerdá,9764
+El Molar,9759
+Alayor,9748
+Zumárraga,9681
+Villarrubia de los Ojos,9667
+Valsequillo de Gran Canaria,9667
+Pinos Puente,9664
+San Juan del Puerto,9659
+Caldas de Reyes,9620
+Grado,9616
+Fernán Núñez,9611
+Cuéllar,9608
+Buñol,9579
+Sevilla la Nueva,9551
+Colmenarejo,9534
+Ginzo de Limia,9529
+Villacañas,9511
+San Sebastián de La Gomera,9501
+Senmanat,9474
+Cervelló,9469
+Rafelbuñol,9467
+Tabernes Blanques,9456
+Burela,9454
+Cervera,9453
+San Fulgencio,9443
+Padul,9436
+Olivares,9427
+Segorbe,9425
+Sabiñánigo,9423
+Salceda de Caselas,9421
+Tocina,9420
+Arenys de Munt,9413
+Abanto y Ciérvana,9402
+Soto del Real,9399
+Manzanares el Real,9386
+Umbrete,9376
+Miajadas,9359
+Santa Comba,9342
+Santa María de Cayón,9316
+Monserrat,9312
+La Ametlla,9296
+Catral,9275
+Muro de Alcoy,9253
+Benahavís,9244
+Vilasar de Dalt,9230
+La Victoria de Acentejo,9228
+Puebla del Caramiñal,9227
+San Lorenzo del Cardezar,9227
+Llagostera,9208
+Tiana,9198
+San Fausto de Campcentellas,9197
+Cisterniga,9182
+Binisalem,9172
+Solsona,9171
+Palomares del Río,9161
+San Fructuoso de Bages,9156
+Jerez de los Caballeros,9147
+El Sauzal,9145
+Montoro,9125
+Puerto del Son,9125
+Loeches,9108
+La Matanza de Acentejo,9092
+Suances,9091
+Arico,9020
+San Martín de Valdeiglesias,9003
+Almusafes,8996
+El Puig,8992
+Hoyo de Manzanares,8973
+Cheste,8962
+Almagro,8958
+Villamediana de Iregua,8954
+Silleda,8876
+Tineo,8857
+Finestrat,8836
+Montmeló,8825
+Tudela de Duero,8780
+La Mojonera,8778
+Monforte del Cid,8777
+Olias del Rey,8705
+Puebla de Farnals,8699
+Tordesillas,8681
+Zuera,8677
+Colmenar de Oreja,8649
+El Cuervo de Sevilla,8635
+Corella,8629
+Trujillo,8605
+Reinosa,8570
+Pedreguer,8558
+Colindres,8549
+Santiponce,8539
+Ortuella,8536
+Polinyá,8482
+Villanueva de Córdoba,8460
+Tona,8455
+Peñíscola,8449
+Campillos,8435
+Noáin (Valle de Elorz),8429
+El Boalo,8424
+Reocín,8422
+Ollería,8421
+Caldas de Malavella,8418
+Santa Coloma de Cervelló,8393
+Herencia,8385
+Carboneras,8375
+Padrón,8355
+Toro,8349
+Monachil,8349
+Legazpia,8341
+Aracena,8340
+Vidreras,8339
+Zalla,8319
+Roquetas,8302
+Pinoso,8281
+Marchamalo,8273
+Cintruénigo,8265
+Muros,8251
+Cenes de la Vega,8231
+Artá,8208
+Bembibre,8196
+Redován,8183
+Cabezón de la Sal,8181
+Ondárroa,8179
+Brión,8145
+Navia,8136
+Morata de Tajuña,8115
+Casares,8111
+Náquera,8102
+Los Santos de Maimona,8096
+Nájera,8059
+Archidona,8050
+Rociana del Condado,8048
+Valencina de la Concepción,8029
+Chantada,8006
+Almodóvar del Río,7995
+Trigueros,7989
+El Paso,7967
+Gélida,7953
+Villanueva del Arzobispo,7933
+Dolores,7919
+La Almunia de Doña Godina,7914
+San Esteban de Sasroviras,7906
+Moya,7889
+Olvera,7887
+La Puebla de Montalbán,7885
+Santa Eulalia de Ronsana,7846
+Villablino,7845
+Gerena,7833
+Baztán,7831
+Pravia,7830
+Roda de Bará,7829
+Muro,7825
+Tobarra,7824
+Massanet de la Selva,7823
+Viladecaballs,7809
+Cabrils,7799
+Camarma de Esteruelas,7792
+Vega de San Mateo,7782
+Cúllar Vega,7770
+Arévalo,7768
+Onil,7763
+Moncófar,7747
+Villarejo de Salvanés,7746
+Malagón,7745
+Torres de la Alameda,7737
+Centellas,7726
+Abadiano,7708
+Callosa de Ensarriá,7708
+Lorquí,7706
+Villaverde del Río,7700
+Cobeña,7698
+Medio Cudeyo,7696
+Sampedor,7693
+Valverde de la Virgen,7687
+Villacarlos,7670
+Firgas,7669
+Astigarraga,7666
+Castro del Río,7665
+Cee,7660
+Santa Margarita y Monjós,7650
+Cercedilla,7648
+Foyos,7641
+Azuaga,7624
+Oroso,7622
+Sotomayor,7603
+Guisona,7603
+Valmaseda,7593
+Alsasua,7590
+Moratalla,7588
+Rocafort,7570
+Huarte,7562
+Bornos,7559
+Carbajosa de la Sagrada,7555
+Quintanar del Rey,7554
+Mellid,7553
+Santa María del Camino,7552
+Berrioplano,7541
+Villamayor,7539
+Puentedeume,7520
+Cox,7513
+La Aldea de San Nicolás,7506
+Almácera,7504
+Collado Mediano,7490
+Pedro Muñoz,7480
+La Rambla,7473
+Villa de Otura,7466
+Vacarisas,7460
+Montblanch,7456
+Berango,7454
+Begas,7432
+Albuñol,7391
+Mojácar,7386
+Bigastro,7361
+Musques,7342
+La Ametlla de Mar,7325
+Benacazón,7324
+Ondara,7308
+Breña Alta,7305
+Elorrio,7292
+Buñola,7286
+Talayuela,7273
+Villa del Prado,7273
+Canet de Berenguer,7265
+Turís,7259
+Alagón,7257
+Posadas,7256
+Bañeres,7255
+Dúrcal,7233
+Huéscar,7220
+Fuentes de Andalucía,7217
+Andorra,7214
+Bujalance,7186
+Fuente el Saz de Jarama,7182
+Benalup-Casas Viejas,7164
+Alcalá de Chivert,7160
+Arechavaleta,7155
+Lequeitio,7143
+Torreperogil,7108
+Burguillos,7098
+Derio,7071
+Cazorla,7067
+Nuevo Baztán,7050
+Jijona,7032
+San Luis,7019
+Montellano,7003
+Trebujena,7000
+Vandellós y Hospitalet del Infante,6984
+Argés,6961
+Bergondo,6951
+Miraflores de la Sierra,6945
+Puerto Serrano,6929
+Negreira,6901
+Villanueva de Castellón,6891
+Valdoviño,6889
+Argamasilla de Alba,6888
+Villa del Río,6882
+Almacellas,6847
+Vimianzo,6840
+San Juan de Labritja,6838
+Sallent de Llobregat,6835
+Tauste,6828
+Piloña,6822
+Cubas de la Sagra,6817
+Villanueva del Ariscal,6814
+Guadalix de la Sierra,6814
+Riudoms,6810
+Taradell,6809
+Paradas,6798
+San Miguel de Salinas,6798
+Constantí,6788
+Campo Real,6781
+San Clemente,6776
+Algarrobo,6773
+Tinajo,6759
+Blanca,6756
+Miño,6753
+Museros,6741
+Güeñes,6740
+Villarreal de Urrechua,6739
+Aguilar de Campoo,6733
+Llissá de Vall,6714
+San Vicente de Montalt,6701
+Carral,6700
+Teyá,6696
+Moyá,6690
+Roda de Ter,6680
+Jimena de la Frontera,6675
+Casarrubios del Monte,6671
+Guareña,6668
+Jaraíz de la Vera,6664
+Pereiro de Aguiar,6647
+Las Pedroñeras,6638
+Fuente del Maestre,6626
+Sils,6624
+Villanueva de la Torre,6603
+Almenara,6591
+Marmolejo,6586
+Moraleja,6585
+Hinojosa del Duque,6579
+San Antonio Vilamajor,6577
+Villares de la Reina,6576
+Vélez-Rubio,6558
+Herrera,6544
+Almensilla,6537
+Arbucias,6531
+Cedeira,6529
+San Felíu de Codinas,6527
+Gata de Gorgos,6515
+Arenas de San Pedro,6464
+Villamuriel de Cerrato,6459
+El Rosal,6431
+San Adrián,6429
+Ulldecona,6417
+La Muela,6416
+La Puebla de Alfindén,6414
+Briviesca,6414
+Pedrezuela,6400
+Alpicat,6394
+Allariz,6378
+Lloseta,6378
+Cangas de Onís,6362
+Olula del Río,6354
+Usúrbil,6345
+Zaratán,6342
+María de Huerva,6335
+Íscar,6326
+Venta de Baños,6284
+Santo Domingo de la Calzada,6283
+Becerril de la Sierra,6277
+Torrellas de Llobregat,6225
+Abanilla,6216
+Borjas Blancas,6215
+Torrejón del Rey,6210
+Tosa de Mar,6206
+Gójar,6203
+Urnieta,6200
+Yeles,6176
+Polanco,6175
+Algaida,6170
+Viator,6160
+Navás,6150
+Tarazona de la Mancha,6138
+Ares,6132
+Orio,6125
+Motilla del Palancar,6119
+Navarclés,6109
+Mota del Cuervo,6108
+Albaida,6102
+Bonares,6101
+Calamonte,6095
+Outes,6082
+Los Villares,6079
+Peñaranda de Bracamonte,6079
+Górliz,6058
+Aznalcóllar,6057
+Suria,6046
+Aldeamayor de San Martín,6035
+Méntrida,6019
+Lazcano,6013
+Lezo,6008
+Artés,5994
+Peralta,5979
+Porcuna,5975
+El Viso de San Juan,5970
+Breña Baja,5963
+Guadasuar,5961
+Tremp,5961
+Vilaboa,5950
+Mercadal,5939
+Jaraco,5923
+La Canonja,5922
+San Hilario Sacalm,5913
+Dosrius,5910
+Alaró,5909
+Arzúa,5901
+Anglés,5884
+Medina de Pomar,5866
+Borriol,5865
+Palazuelos de Eresma,5830
+Villabona,5826
+Membrilla,5825
+Puebla de la Calzada,5812
+Argamasilla de Calatrava,5801
+Cartes,5800
+San Pol de Mar,5791
+Almodóvar del Campo,5788
+Coristanco,5779
+Esquivias,5778
+Viella y Medio Arán,5765
+Constantina,5742
+Isla Mayor,5741
+Porreras,5741
+La Selva del Campo,5736
+Librilla,5729
+Ugena,5723
+Los Yébenes,5717
+Benigánim,5716
+Arbós,5713
+Arafo,5712
+Órgiva,5709
+Celanova,5709
+Valga,5704
+Altafulla,5693
+Alfacar,5688
+Cerdedo-Cotobad,5687
+Chauchina,5679
+San Ciprián de Viñas,5675
+Chinchón,5664
+Santa Cristina de Aro,5664
+Alhama de Granada,5655
+Guardo,5653
+Llerena,5650
+Mora de Ebro,5649
+Vilafan,5642
+Prado del Rey,5634
+Torreblanca,5630
+Salteras,5627
+Benejúzar,5625
+Cenia,5623
+Montehermoso,5619
+Vilanova del Vallés,5600
+Abegondo,5584
+Bechí,5580
+Agaete,5568
+Entrambasaguas,5568
+Castuera,5567
+Arroyo de la Luz,5565
+La Guancha,5562
+Huelma,5559
+Pulianas,5559
+Puentecaldelas,5553
+Ribadesella,5548
+Agramunt,5516
+Haría,5507
+Algodonales,5498
+Simancas,5493
+Celrá,5486
+Guijuelo,5484
+Ortigueira,5477
+Los Montesinos,5477
+Urdúliz,5469
+Numancia de la Sagra,5455
+Moraleja de Enmedio,5453
+Cájar,5447
+Aceuchal,5446
+Paterna de Rivera,5441
+Alameda,5434
+Almazán,5426
+Capellades,5417
+Mollina,5413
+Sariegos,5413
+Puenteceso,5399
+Yepes,5397
+Deva,5393
+Macael,5381
+Montefrío,5376
+Las Navas del Marqués,5362
+Alcudia de Crespins,5361
+Villanueva del Trabuco,5360
+Cigales,5360
+Otero de Rey,5359
+Arjona,5349
+Polop,5339
+Sarriá de Ter,5327
+Peal de Becerro,5325
+Nueva Carteya,5317
+Motrico,5313
+Gualchos,5308
+Casariche,5305
+Talavera la Real,5282
+Alcover,5278
+Carranque,5274
+San Vicente de Alcántara,5262
+Meaño,5258
+Malpica de Bergantiños,5241
+Valencia de Alcántara,5236
+Esporlas,5236
+Mugardos,5228
+Ayora,5223
+Yebes,5220
+Corral de Almaguer,5219
+Canyellas,5218
+Añover de Tajo,5215
+Parres,5208
+Alcalá de los Gazules,5205
+Oza-Cesuras,5203
+Miengo,5199
+Guitiriz,5194
+Ribadumia,5189
+Nava,5186
+Valencia de Don Juan,5185
+La Granja de San Ildefonso,5183
+Bescanó,5178
+La Guardia de Jaén,5175
+Peñafiel,5172
+El Burgo de Osma,5166
+Valverde,5165
+Iznalloz,5161
+Camariñas,5151
+Nambroca,5151
+Bellpuig,5150
+Marina de Cudeyo,5148
+La Campana,5137
+Pioz,5131
+Catllar,5115
+Moral de Calatrava,5109
+Castilblanco de los Arroyos,5107
+Pedrera,5104
+Vergel,5101
+La Cañiza,5090
+Salvatierra,5085
+Villa de Cruces,5082
+Nerva,5081
+Borja,5076
+Mocejón,5069
+Agost,5067
+Alburquerque,5063
+Alba de Tormes,5058
+Noreña,5058
+Cerceda,5058
+Ferrerías,5051
+Las Salinas,5044
+Marquina-Jeméin,5037
+Vedra,5019
+Quesada,5015
+Castro de Rey,5015
+Candeleda,5001
