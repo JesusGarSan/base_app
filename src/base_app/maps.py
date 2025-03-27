@@ -21,16 +21,35 @@ def show_map(map, **kwargs):
     "Calls st_folium directly"
     return st_folium(map, **kwargs)
 
-def create_colorbar(colors, vmin, vmax, caption, max_labels = 4, **kwargs):
-    bar = cmp.LinearColormap(
-    colors, None,
-    vmin, vmax,
-    caption=caption,
-    max_labels=max_labels,
-    **kwargs,
-    )
-    return bar
+def create_colorbar(colors, values, caption, max_labels=4, **kwargs):
+    """
+    Crea una barra de color adaptada para valores binarios y categóricos, mostrando los nombres de los valores.
 
+    Args:
+        colors (list): Lista de colores correspondientes a los valores.
+        values (list): Lista de valores (booleanos o categóricos).
+        caption (str): Título de la barra de color.
+        max_labels (int, optional): Número máximo de etiquetas en la barra. Defaults to 4.
+        **kwargs: Argumentos adicionales para cmp.StepColormap o cmp.LinearColormap.
+
+    Returns:
+        cmp.StepColormap o cmp.LinearColormap: Barra de color adaptada.
+    """
+
+    if all(isinstance(v, bool) for v in values):  # Valores booleanos
+        value_names = ['False', 'True']
+        color_map = cmp.StepColormap(colors, vmin=0, vmax=1, index=[0.5], caption=caption, tick_labels = [0.001,.9999], **kwargs)
+    elif all(isinstance(v, str) for v in values):  # Valores categóricos
+        value_names = sorted(list(set(values)))
+        if len(value_names) > 2: index = range(len(value_names))
+        else: index = [0.5]
+        color_map = cmp.StepColormap(colors, vmin=0, vmax=len(value_names) - 1, index=index, caption=caption, **kwargs)
+    else:  # Valores numéricos (comportamiento original)
+        vmin = min(values)
+        vmax = max(values)
+        color_map = cmp.LinearColormap(colors, vmin=vmin, vmax=vmax, caption=caption, max_labels=max_labels, **kwargs)
+
+    return color_map
 
 def get_circles(data, radius: float = 50.0, tips: dict = None, color_column: str = None, colormap=None,
                                latitude_column='latitude', longitude_column='longitude', categorical_coloring=False, **kwargs):
@@ -50,35 +69,51 @@ def get_circles(data, radius: float = 50.0, tips: dict = None, color_column: str
 
     Returns:
         folium.FeatureGroup: A Folium FeatureGroup containing the circles.
+        list: colormap hex or None.
     """
 
     assert latitude_column in data.columns, f'"{latitude_column}" column not found. You must specify the name of the column containing the latitudes.'
     assert longitude_column in data.columns, f'"{longitude_column}" column not found. You must specify the name of the column containing the longitudes.'
-
-    if color_column is not None:
-        if not is_numeric_dtype(data[color_column]):
-            categorical_coloring = True
 
     lat = latitude_column
     lon = longitude_column
 
     # Circle coloring
     if color_column is not None:
-        if categorical_coloring:
-            data[color_column], _ = pd.factorize(data[color_column])
+        if not is_numeric_dtype(data[color_column]):
+            # Handle categorical and boolean columns
+            unique_values = data[color_column].unique()
+            color_map = {}
+            if colormap is None:
+                colormap = cm.get_cmap('tab20') if len(unique_values) <= 20 else cm.get_cmap('viridis')
 
-        data.sort_values(by=color_column, ascending=True, inplace=True)
-        if colormap is None:
-            colormap = cm.get_cmap('viridis')
-        elif isinstance(colormap, str):
-            colormap = cm.get_cmap(colormap)
+            if isinstance(colormap, str):
+                colormap = cm.get_cmap(colormap)
 
-        vmin = data[color_column].min()
-        vmax = data[color_column].max()
-        norm = colors.Normalize(vmin, vmax)
-        color_values = [colors.rgb2hex(colormap(norm(value))) for value in data[color_column]]
-        colormap_values = colormap(norm(np.linspace(vmin, vmax, 256)))[:, :]
-        colormap_hex = [colors.rgb2hex(color) for color in colormap_values]
+            num_colors = len(unique_values)
+            norm = colors.Normalize(0, num_colors - 1)
+            color_values = [colors.rgb2hex(colormap(norm(i))) for i in range(num_colors)]
+
+            for i, value in enumerate(unique_values):
+                color_map[value] = color_values[i]
+
+            data['circle_color'] = data[color_column].map(color_map)
+            color_values = data['circle_color'].tolist()
+            colormap_hex = color_values # For categorical, each color is unique.
+        else:
+            # Handle numeric columns
+            data.sort_values(by=color_column, ascending=True, inplace=True)
+            if colormap is None:
+                colormap = cm.get_cmap('viridis')
+            elif isinstance(colormap, str):
+                colormap = cm.get_cmap(colormap)
+
+            vmin = data[color_column].min()
+            vmax = data[color_column].max()
+            norm = colors.Normalize(vmin, vmax)
+            color_values = [colors.rgb2hex(colormap(norm(value))) for value in data[color_column]]
+            colormap_values = colormap(norm(np.linspace(vmin, vmax, 256)))[:, :]
+            colormap_hex = [colors.rgb2hex(color) for color in colormap_values]
 
     else:
         color_values = ['orange'] * len(data)
@@ -104,10 +139,6 @@ def get_circles(data, radius: float = 50.0, tips: dict = None, color_column: str
     for (latitude, longitude, tooltip, color) in zip(data[lat], data[lon], tooltip_texts, color_values):
         folium.Circle([latitude, longitude], radius=radius, color=color, tooltip=tooltip, **kwargs).add_to(circles_fg)
 
-    # Add colormap to feature group if color_column is provided
-    if color_column is not None:
-        colormap = create_colorbar(colormap_hex, vmin=vmin, vmax=vmax, caption=color_column)
-    else: colormap = None
 
     return circles_fg, colormap_hex
 
