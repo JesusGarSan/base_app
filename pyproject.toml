@@ -5,6 +5,15 @@ build-backend = "hatchling.build"
 [project]
 name = "base_app"
 version = "0.0.1"
+dependencies = [
+  "streamlit",
+  "folium",
+  "streamlit_folium",
+  "matplotlib",
+  "pandas",
+  "branca",
+  "numpy"
+]
 authors = [
   { name="Jesús García Sánchez", email="gsus@ugr.es" },
 ]
