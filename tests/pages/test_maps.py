@@ -24,8 +24,12 @@ if data is not None:
         display_circles, radius, color_column, tips, colormap = maps.circle_config_form(data)
 
     if display_circles:
-        map = maps.add_circles(map, data,radius,tips,color_column,colormap)
+        fg, colormap = maps.get_circles(data,radius,tips,color_column,colormap)
+    else: fg = None
 
     with col[1]:
-        maps.show_map(map, use_container_width=True)
+        if colormap is not None:
+            colormap = maps.create_colorbar(colormap, min(data[color_column]),  max(data[color_column]), color_column, 6)
+            colormap.add_to(map)
+        maps.show_map(map, feature_group_to_add=fg, use_container_width=True)
 

@@ -21,46 +21,68 @@ def show_map(map, **kwargs):
     "Calls st_folium directly"
     return st_folium(map, **kwargs)
 
-def add_colormap(map, colors, vmin, vmax, caption):
+def create_colorbar(colors, vmin, vmax, caption, max_labels = 4, **kwargs):
     bar = cmp.LinearColormap(
     colors, None,
     vmin, vmax,
     caption=caption,
-    max_labels=4,
+    max_labels=max_labels,
+    **kwargs,
     )
-    bar.add_to(map)
-    return map
+    return bar
 
-def add_circles(map_obj, data, radius:float=50.0, tips: dict = None, color_column: str = None, colormap=None,
-                latitude_column='latitude', longitude_column='longitude', categorical_coloring=False, **kwargs):
 
-    assert "latitude" in data.columns, f'"{latitude_column}" column not found. You must specify the name of the column containing the latitudes.'
-    assert "longitude" in data.columns, f'"{longitude_column}" column not found. You must specify the name of the column containing the longitudes.'
+def get_circles(data, radius: float = 50.0, tips: dict = None, color_column: str = None, colormap=None,
+                               latitude_column='latitude', longitude_column='longitude', categorical_coloring=False, **kwargs):
+    """
+    Adds circles to a Folium FeatureGroup based on data, with optional color and tooltips.
 
+    Args:
+        data (pd.DataFrame): DataFrame containing latitude, longitude, and optional color/tooltip data.
+        radius (float, optional): Radius of the circles. Defaults to 50.0.
+        tips (dict, optional): Dictionary specifying tooltip content (e.g., {"Name": "name_column"}). Defaults to None.
+        color_column (str, optional): Column name for circle coloring. Defaults to None.
+        colormap (str or matplotlib.colors.Colormap, optional): Colormap for numerical coloring. Defaults to 'viridis'.
+        latitude_column (str, optional): Column name for latitude. Defaults to 'latitude'.
+        longitude_column (str, optional): Column name for longitude. Defaults to 'longitude'.
+        categorical_coloring (bool, optional): Whether to treat color_column as categorical. Defaults to False.
+        **kwargs: Additional keyword arguments passed to folium.Circle.
+
+    Returns:
+        folium.FeatureGroup: A Folium FeatureGroup containing the circles.
+    """
+
+    assert latitude_column in data.columns, f'"{latitude_column}" column not found. You must specify the name of the column containing the latitudes.'
+    assert longitude_column in data.columns, f'"{longitude_column}" column not found. You must specify the name of the column containing the longitudes.'
 
     if color_column is not None:
-        if not is_numeric_dtype(data[color_column]): categorical_coloring=True
+        if not is_numeric_dtype(data[color_column]):
+            categorical_coloring = True
 
     lat = latitude_column
     lon = longitude_column
 
-    # circle coloring
+    # Circle coloring
     if color_column is not None:
         if categorical_coloring:
-            data[color_column],_ = pd.factorize(data[color_column])
+            data[color_column], _ = pd.factorize(data[color_column])
 
         data.sort_values(by=color_column, ascending=True, inplace=True)
-        if colormap is None: colormap = cm.get_cmap('viridis')
-        else:  colormap = cm.get_cmap(colormap)
-        vmin=data[color_column].min()
-        vmax=data[color_column].max()
+        if colormap is None:
+            colormap = cm.get_cmap('viridis')
+        elif isinstance(colormap, str):
+            colormap = cm.get_cmap(colormap)
+
+        vmin = data[color_column].min()
+        vmax = data[color_column].max()
         norm = colors.Normalize(vmin, vmax)
         color_values = [colors.rgb2hex(colormap(norm(value))) for value in data[color_column]]
-        colormap = colormap(norm(np.linspace(vmin, vmax, 256)))[:, :]
-        colormap = [colors.rgb2hex(color) for color in colormap]
-        map_obj = add_colormap(map_obj, colormap, vmin, vmax, color_column)
+        colormap_values = colormap(norm(np.linspace(vmin, vmax, 256)))[:, :]
+        colormap_hex = [colors.rgb2hex(color) for color in colormap_values]
+
     else:
         color_values = ['orange'] * len(data)
+        colormap_hex = None
 
     # Tooltips
     if tips:
@@ -73,14 +95,21 @@ def add_circles(map_obj, data, radius:float=50.0, tips: dict = None, color_colum
     else:
         tooltip_texts = [None] * len(data)
 
+    # Create FeatureGroup
+    circles_fg = folium.FeatureGroup(name='Circles')
 
-    # Add the circles
-    if "fill" not in kwargs: kwargs["fill"] = True;
+    # Add the circles to the FeatureGroup
+    if "fill" not in kwargs:
+        kwargs["fill"] = True
     for (latitude, longitude, tooltip, color) in zip(data[lat], data[lon], tooltip_texts, color_values):
-        folium.Circle([latitude, longitude], radius=radius, color=color, tooltip=tooltip,
-                       **kwargs).add_to(map_obj)
+        folium.Circle([latitude, longitude], radius=radius, color=color, tooltip=tooltip, **kwargs).add_to(circles_fg)
 
-    return map_obj
+    # Add colormap to feature group if color_column is provided
+    if color_column is not None:
+        colormap = create_colorbar(colormap_hex, vmin=vmin, vmax=vmax, caption=color_column)
+    else: colormap = None
+
+    return circles_fg, colormap_hex
 
 
 def map_config_form(lat:float=39.5, lon:float=-4.0, zoom_start:int=6, key:str=""):
