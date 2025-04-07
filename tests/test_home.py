@@ -20,6 +20,11 @@ header_elements = [
     "icon": "🗃️"
 },
 {
+    "page_name": "Plots",
+    "filepath": "./pages/test_plots.py" ,
+    "icon": "📊"
+},
+{
     "page_name": "Maps",
     "filepath": "./pages/test_maps.py" ,
     "icon": "🗺️"

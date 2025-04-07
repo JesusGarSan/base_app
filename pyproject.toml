@@ -12,7 +12,8 @@ dependencies = [
   "matplotlib",
   "pandas",
   "branca",
-  "numpy"
+  "numpy",
+  "mpld3",
 ]
 authors = [
   { name="Jesús García Sánchez", email="gsus@ugr.es" },
