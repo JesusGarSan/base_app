@@ -16,6 +16,14 @@ def create_map(location=[39.5, -4.0], zoom_start:int=6, tiles:str = "OpenStreetM
     map = folium.Map(location, zoom_start=zoom_start, tiles=tiles, **kwargs)      
     return map
 
+def add_fullscreen_button(map, position="topleft", title="Expand", title_cancel="Exit", force_separate_button=True):
+    folium.plugins.Fullscreen(
+    position=position,
+    title=title,
+    title_cancel=title_cancel,
+    force_separate_button=True,
+    ).add_to(map)
+    return map
 
 def show_map(map, **kwargs):
     "Calls st_folium directly"
