@@ -67,7 +67,7 @@ def filter_dataframe(df: pd.DataFrame,
             # Treat columns with < 10 unique values as categorical
             if is_categorical_dtype(df[column]) or df[column].nunique() < 10:
                 user_cat_input = right.multiselect(
-                    f"{text["values"]} {column}",
+                    f"{text['values']} {column}",
                     df[column].unique(),
                     default=list(df[column].unique()),
                 )
@@ -77,7 +77,7 @@ def filter_dataframe(df: pd.DataFrame,
                 _max = float(df[column].max())
                 step = (_max - _min) / 100
                 user_num_input = right.slider(
-                    f"{text["values"]} {column}",
+                    f"{text['values']} {column}",
                     _min,
                     _max,
                     (_min, _max),
@@ -86,7 +86,7 @@ def filter_dataframe(df: pd.DataFrame,
                 df = df[df[column].between(*user_num_input)]
             elif is_datetime64_any_dtype(df[column]):
                 user_date_input = right.date_input(
-                    f"{text["values"]} {column}",
+                    f"{text['values']} {column}",
                     value=(
                         df[column].min(),
                         df[column].max(),
@@ -98,7 +98,7 @@ def filter_dataframe(df: pd.DataFrame,
                     df = df.loc[df[column].between(start_date, end_date)]
             else:
                 user_text_input = right.text_input(
-                    f"{text["regex"]} {column}",
+                    f"{text['regex']} {column}",
                 )
                 if user_text_input:
                     df = df[df[column].str.contains(user_text_input)]
