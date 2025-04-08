@@ -27,6 +27,7 @@ def show_stats(data, columns=None, use_container_width=True):
 def filter_dataframe(df: pd.DataFrame,
                      text={"title":"Filter dataframe on",
                            "values": "Values for ",
+                           "placeholder":"Choose an option",
                            "regex": "Substring of regex in "}) -> pd.DataFrame:
     """
     Adds a UI on top of a dataframe to let viewers filter columns
@@ -60,7 +61,7 @@ def filter_dataframe(df: pd.DataFrame,
     modification_container = st.container()
 
     with modification_container:
-        to_filter_columns = st.multiselect(text["title"], df.columns)
+        to_filter_columns = st.multiselect(text["title"], df.columns, placeholder=text["placeholder"])
         for column in to_filter_columns:
             left, right = st.columns((1, 20))
             left.write("↳")
