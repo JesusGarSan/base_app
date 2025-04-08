@@ -10,10 +10,10 @@ def column_selector(data, default_columns:list = None, key="", text={"title": "C
 
     return selected_columns
 
-def show_table(data, columns=None, use_container_width=True):
+def show_table(data, columns=None, use_container_width=True, **kwargs):
     if columns is None: columns = data.columns.to_list()
     if columns:
-        st.dataframe(data[columns], use_container_width = use_container_width)
+        st.dataframe(data[columns], use_container_width = use_container_width, **kwargs)
     else:
         st.write("No se ha seleccionado ninguna columna.")
     return
