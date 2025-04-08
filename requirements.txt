@@ -1,6 +1,7 @@
 streamlit
 folium
 streamlit_folium
+streamlit-antd-components
 pandas
 branca
 numpy

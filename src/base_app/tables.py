@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-
+import streamlit_antd_components as sac
 
 def column_selector(data, default_columns:list = None, key="", text={"title": "Columns to show:", "placeholder":"Choose an option"}):
     columns = data.columns.to_list()
@@ -26,8 +26,9 @@ def show_stats(data, columns=None, use_container_width=True):
 
 def sort_dataframe(df: pd.DataFrame,
                    text={"title": "Columns to sort by",
-                         "direction": "Sort direction for"},
-                   ascending_options=["Ascending", "Descending"]) -> pd.DataFrame:
+                         "direction": "Sort direction:"},
+                   sorting_directions=["Ascending", "Descending"],
+                   max_selections=5) -> pd.DataFrame:
     """
     Adds a UI on top of a dataframe to let viewers sort by multiple columns
     and direction.
@@ -43,17 +44,18 @@ def sort_dataframe(df: pd.DataFrame,
         pd.DataFrame: Sorted dataframe
     """
     df = df.copy()
-    sort_columns = st.multiselect(text["title"], df.columns, placeholder=text["placeholder"] if "placeholder" in text else "Choose columns to sort")
+    sort_columns = st.multiselect(text["title"], df.columns, placeholder=text["placeholder"] if "placeholder" in text else "Choose columns to sort",
+                                  max_selections=max_selections)
+    n = len(sort_columns)
+    if n>0: st.write(text['direction'])
+    col = st.columns(max_selections)
 
     sort_directions = {}
-    for column in sort_columns:
-        direction = st.selectbox(
-            f"{text['direction']} '{column}'",
-            ascending_options,
-            index=0,  # Default to ascending
-            key=f"sort_{column}"
-        )
-        sort_directions[column] = direction == ascending_options[0]
+    for i, column in enumerate(sort_columns):
+        with col[i]:
+            direction = sac.switch(label=f"{column}", on_label=sorting_directions[0], off_label=sorting_directions[1],
+                                    position='left', size='md')
+        sort_directions[column] = direction
 
     if sort_columns:
         df = df.sort_values(by=sort_columns, ascending=[sort_directions[col] for col in sort_columns])
