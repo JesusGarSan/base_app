@@ -24,11 +24,11 @@ def show_stats(data, columns=None, use_container_width=True):
         st.dataframe(data[columns].describe(), use_container_width=use_container_width)
     return
 
-def sort_dataframe(df: pd.DataFrame,
+def sort_dataframe(df: pd.DataFrame, columns:list = None,
                    text={"title": "Columns to sort by",
                          "direction": "Sort direction:"},
                    sorting_directions=["Ascending", "Descending"],
-                   max_selections=5) -> pd.DataFrame:
+                   max_selections=5, key="") -> pd.DataFrame:
     """
     Adds a UI on top of a dataframe to let viewers sort by multiple columns
     and direction.
@@ -44,8 +44,9 @@ def sort_dataframe(df: pd.DataFrame,
         pd.DataFrame: Sorted dataframe
     """
     df = df.copy()
-    sort_columns = st.multiselect(text["title"], df.columns, placeholder=text["placeholder"] if "placeholder" in text else "Choose columns to sort",
-                                  max_selections=max_selections)
+    if columns is None: columns = df.columns
+    sort_columns = st.multiselect(text["title"], columns, placeholder=text["placeholder"] if "placeholder" in text else "Choose columns to sort",
+                                  max_selections=max_selections, key=f"sort_dataframe_multiselect_{key}")
     n = len(sort_columns)
     if n>0: st.write(text['direction'])
     col = st.columns(max_selections)
