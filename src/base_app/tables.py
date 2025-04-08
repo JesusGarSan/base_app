@@ -24,10 +24,45 @@ def show_stats(data, columns=None, use_container_width=True):
         st.dataframe(data[columns].describe(), use_container_width=use_container_width)
     return
 
+def sort_dataframe(df: pd.DataFrame,
+                   text={"title": "Columns to sort by",
+                         "direction": "Sort direction for"},
+                   ascending_options=["Ascending", "Descending"]) -> pd.DataFrame:
+    """
+    Adds a UI on top of a dataframe to let viewers sort by multiple columns
+    and direction.
+
+    Args:
+        df (pd.DataFrame): Original dataframe
+        text (dict, optional): Dictionary of text elements for the UI.
+            Defaults to {"title": "Sort dataframe by", "columns": "Columns to sort by", "direction": "Sort direction for"}.
+        ascending_options (list, optional): List of strings for ascending/descending options.
+            Defaults to ["Ascending", "Descending"].
+
+    Returns:
+        pd.DataFrame: Sorted dataframe
+    """
+    df = df.copy()
+    sort_columns = st.multiselect(text["title"], df.columns, placeholder=text["placeholder"] if "placeholder" in text else "Choose columns to sort")
+
+    sort_directions = {}
+    for column in sort_columns:
+        direction = st.selectbox(
+            f"{text['direction']} '{column}'",
+            ascending_options,
+            index=0,  # Default to ascending
+            key=f"sort_{column}"
+        )
+        sort_directions[column] = direction == ascending_options[0]
+
+    if sort_columns:
+        df = df.sort_values(by=sort_columns, ascending=[sort_directions[col] for col in sort_columns])
+
+    return df
+
 def filter_dataframe(df: pd.DataFrame,
                      text={"title":"Filter dataframe on",
                            "values": "Values for ",
-                           "placeholder":"Choose an option",
                            "regex": "Substring of regex in "}) -> pd.DataFrame:
     """
     Adds a UI on top of a dataframe to let viewers filter columns
@@ -61,7 +96,7 @@ def filter_dataframe(df: pd.DataFrame,
     modification_container = st.container()
 
     with modification_container:
-        to_filter_columns = st.multiselect(text["title"], df.columns, placeholder=text["placeholder"])
+        to_filter_columns = st.multiselect(text["title"], df.columns, placeholder=text["placeholder"] if "placeholder" in text else "Choose columns to sort")
         for column in to_filter_columns:
             left, right = st.columns((1, 20))
             left.write("↳")
