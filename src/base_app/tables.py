@@ -2,11 +2,11 @@ import streamlit as st
 import pandas as pd
 
 
-def column_selector(data, default_columns:list = None, key=""):
+def column_selector(data, default_columns:list = None, key="", text={"title": "Columns to show:", "placeholder":"Choose an option"}):
     columns = data.columns.to_list()
     if default_columns is None:
         default_columns = columns
-    selected_columns = st.multiselect('Columns to show:', columns, default_columns, key="column_selector_"+key)
+    selected_columns = st.multiselect(text['title'], columns, default_columns, key="column_selector_"+key, placeholder=text['placeholder'])
 
     return selected_columns
 
